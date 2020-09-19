@@ -1,0 +1,92 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    width: fit-content;
+    width: -moz-fit-content;
+    max-width: 60%;
+}
+
+.message__avatar {
+    margin-right: 20px;
+}
+
+.message__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message__name {
+    width: max-content;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: small;
+}
+
+.message__bubble {
+    clear: both;
+    position: relative;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.message__bubble::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    bottom: 10px;
+}
+
+.message__text {
+    color: black;
+    font-size: 16px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.message__timestamp {
+    float: right;
+    padding-left: 10px;
+    position: relative;
+    bottom: -12px;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 11px;
+}
+
+/* Received message config */
+
+.receive {
+    align-self: flex-start;
+}
+
+.receive .message__bubble {
+    background-color: white;
+}
+
+.receive .message__bubble::after {
+    border-width: 10px 10px 0 0;
+    border-color: transparent #fff transparent transparent;
+    left: -10px;
+}
+
+/* Sent message config */
+
+.sent {
+    align-self: flex-end;
+}
+
+.sent .message__bubble {
+    background-color: #e1ffc7;
+}
+
+.sent .message__bubble::after {
+    border-width: 10px 0 0 10px;
+    border-color: transparent transparent transparent #e1ffc7;
+    right: -10px;
+}

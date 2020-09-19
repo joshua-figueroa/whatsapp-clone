@@ -1,0 +1,25 @@
+.conversation {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.conversation:hover {
+    background-color: #ebebeb;
+}
+
+.conversation__info {
+    margin-left: 15px;
+}
+
+.conversation__info > h3 {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.conversation__info > p {
+    word-wrap: break-word;
+    word-break: break-all;
+}

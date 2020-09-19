@@ -1,0 +1,96 @@
+.sidebar {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.sidebar__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10vw;
+}
+
+.sidebar__icons > .MuiSvgIcon-root {
+    margin-right: 2vw;
+    font-size: 24px !important;
+}
+
+.sidebar__search {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 10px;
+}
+
+.sidebar__searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex: 1;
+    border-radius: 20px;
+}
+
+.sidebar__searchContainer > .MuiSvgIcon-root {
+    color: gray;
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.sidebar__searchContainer > input {
+    flex: 1;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 5px 0;
+    border: none;
+    outline: 0;
+}
+
+.sidebar__chats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow-y: auto;
+    position: relative;
+}
+
+.sidebar__chats > span {
+    margin-top: 15px;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    color: gray;
+}
+
+.sidebar__addChat {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.sidebar__addChat > .MuiIconButton-root {
+    background-color: #128c7e;
+}
+
+.sidebar__addChat > .MuiIconButton-root:hover {
+    background-color: #075e54;
+}
+
+.sidebar__addChat > .MuiIconButton-root .MuiSvgIcon-root {
+    color: white;
+}
+
+.sidebar__chats > a:active {
+    color: rgb(54, 54, 54);
+}
